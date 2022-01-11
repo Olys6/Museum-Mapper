@@ -11,7 +11,7 @@
   
 ## Overview
 
-Museum Mapper is an app that displays a wide variety of museums in England. Almost everything was coded separately by using different git branches except for the backend which was done entirely with my 3 other group partners and another few times when helping each other. My group and I had roughly 9 days on this project.
+Museum Mapper is an app that displays a wide variety of museums in England. Almost everything was coded separately by using different git branches except for the backend which was done entirely with my 3 other group partners and another few times when helping each other. My group and I had roughly 9 days on this project. I made the Homepage, added all animations you see on the website, created the logo, made some of the profile page and changed a lot of information (images, added exhibits image and exhibits name) to each museum.
 
 ## Deployed app <a href="https://museum-mapper.herokuapp.com/">here</a>
 
