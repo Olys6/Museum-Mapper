@@ -43,8 +43,39 @@ We used mongoDB and set up everything except for the login and the register on t
 
 ## 3rd - 6th Day
 
-I started working on the homepage and getting a random museum to display every time the user loads the home page (similar to my previous project <a href="https://rapidgames.netlify.app">here</a>). 
-I worked differently this time because I wasn’t using params to find the id. Instead, it was easier because I only had to use math.random after the data that was being pulled in. I then worked on the top half of the page by adding a nice background with the website logo and a short description. I made the homepage using Bulma and its Hero component. I then got animations going with <a href="https://animate.style">Animate</a> for the first time to have the logo/description pulse by adding 3 classes to the homepage logo and description div. I then also worked on changing every image in the museum database so that we had the best possible pictures to represent the museum. I looked up every single museum (approximately 20 museums) and found images, uploaded every single one on my Imgur and inserted them into the database to then seed the database.
+I started working on the homepage and getting a random museum to display every time the user loads the home page (similar to my previous project <a href="https://rapidgames.netlify.app">here</a>).
+
+    const [featuredMuseums, setFeaturedMuseums] = useState([])
+
+    const [hasError, setHasError] = useState(true)
+
+    useEffect(() => {
+
+      const getData = async () => {
+        try {
+          const { data } = await axios.get('/api/museums')
+          setFeaturedMuseums(data[Math.floor(Math.random() * data.length)])
+        } catch (err) {
+          setHasError(false)
+        }
+      }
+      getData()
+    }, [])
+
+I worked differently this time because I wasn’t using params to find the id. Instead, it was easier because I only had to use math.random after the data that was being pulled in. I then worked on the top half of the page by adding a nice background with the website logo and a short description. I made the homepage using Bulma and its Hero component. I then got animations going with <a href="https://animate.style">Animate</a> for the first time to have the logo/description pulse by adding 3 classes to the homepage logo and description div.
+
+    return (
+      <section className="hero is-large mainHero">
+        <div className="hero-body homeHeroBody">
+          <div className="animate__animated animate__pulse animate__slower animate__infinite">
+            <div className="has-text-centered animate__animated animate__fadeInLeft "><img src="https://i.imgur.com/vXYPTpd.png" alt="Museum Mapper logo" /></div>
+            <p className="title has-text-centered has-text-white heroSubtitle animate__animated animate__fadeInRight"><strong>Discover fascinating natural history collections across England</strong></p>
+          </div>
+        </div>
+      </section>
+    )
+
+I then also worked on changing every image in the museum database so that we had the best possible pictures to represent the museum. I looked up every single museum (approximately 20 museums) and found images, uploaded every single one on my Imgur and inserted them into the database to then seed the database.
 
 <img src="https://i.imgur.com/nRelBTt.gif">
 <img src="https://i.imgur.com/rohCD9i.png">
