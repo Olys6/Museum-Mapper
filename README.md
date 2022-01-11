@@ -29,8 +29,9 @@ Museum Mapper is an app that displays a wide variety of museums in England. Almo
 ## 1st - 2nd Day:
 
 The first two days, we planned out our project's subject. So I asked everyone to write down their hobbies to find out what we all had in common, and we found out that we all had an interest in dinosaurs, so we decided to make an app about museums. As soon as we knew what the subject was going to be, we got started right away by pair coding the backend. 
-We used mongoDB and set up everything except for the login and the register on the evening we started. The next day we worked together to finish the register and login in the morning and the afternoon consisted of setting up the front end so that we could all get started on building different components. We took a look at the wireframe and talked about what we would like to do. We then set up tasks on Asana for who’s going to do what and split up to work alone, when help was needed someone sent a message to the others and help arrived.
+We used mongoDB and set up everything except for the login and the register on the evening we started. The next day we worked together to finish the register and login in the morning and the afternoon consisted of setting up the front end so that we could all get started on building different components. We took a look at the wireframe and talked about what we would like to do. We then set up tasks on Asana for who’s going to do what and split up to work alone, when help was needed someone sent a message to the others and help arrived. The workload was divided by having two people work on a component and trying to have one person who struggled with it in an earlier project and one who understood the subject well so that we could all learn from each and other.
 
+<img src="https://i.imgur.com/tYBMsy3.png">
 <img src="https://i.imgur.com/yYXQNpH.png">
 <img src="https://i.imgur.com/iWQ0E7y.png">
 <img src="https://i.imgur.com/3vJ72xe.png">
