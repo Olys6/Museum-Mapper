@@ -57,14 +57,11 @@ I worked on perfecting the homepage as well as making the exhibits page. This wa
 <img src="https://i.imgur.com/Fn0fy0f.png">
 
 
-
 ## 9th day
 
 On the last day, I added some of styling with vanilla CSS and error handling for the homepage and the exhibits page. The error handling is all in the Axios request, if there is an error in the get request it will display “Something went wrong, please refresh the page” but if the request is fine it will display all the things I’ve added to the website so far. I added some custom animations to all the cards on the exhibits and the “all museums” page with a simple transition to transform and then scale using vanilla CSS. The animations I added on the navbar work on transition, transform padding and opacity. I also made it so that when you hover over the navbar which contains other items it blurs out all the other items in the area, easier to show than to explain but this works by modifying the parent element of the items and decreasing the opacity of the other items around while the hovered item’s opacity become clearer in CSS. I even added a parallax effect on the background image of the exhibit page the same way I did for the homepage with just vanilla CSS.
 
 <img src="https://i.imgur.com/NS9i0vF.gif">
-
- 
 
 ## Wins and Challenges
 
