@@ -86,7 +86,8 @@ I then also worked on changing every image in the museum database so that we had
 ## 7th - 8th Day
 
 I worked on perfecting the homepage as well as making the exhibits page. This was a bonus so we didn’t put a standout exhibit into the backend. I added an exhibit from every museum into its corresponding object. I gave it two new values: the exhibit name and an exhibit image. I then made a whole page dedicated to all exhibits and when you click on the exhibit, it leads you to the museum which owns the exhibit. The way this works is that since the exhibit is in the museum's object, it just takes the id of its object and takes it to the museum page. To the homepage I made the filter for filtering museums pop out of the navbar and rounded it. I added a lot of saturation to the background image to really get the colours to pop out. I also made a parallax effect working with the background image of the homepage by telling it to stay fixed.
-[background-image: fixed;]
+    
+    background-image: fixed;
 
 <img src="https://i.imgur.com/4anjuIS.png">
 <img src="https://i.imgur.com/Fn0fy0f.png">
@@ -97,6 +98,14 @@ I worked on perfecting the homepage as well as making the exhibits page. This wa
 On the last day, I added some of styling with vanilla CSS and error handling for the homepage and the exhibits page. The error handling is all in the Axios request, if there is an error in the get request it will display “Something went wrong, please refresh the page” but if the request is fine it will display all the things I’ve added to the website so far. I added some custom animations to all the cards on the exhibits and the “all museums” page with a simple transition to transform and then scale using vanilla CSS. The animations I added on the navbar work on transition, transform padding and opacity. I also made it so that when you hover over the navbar which contains other items it blurs out all the other items in the area, easier to show than to explain but this works by modifying the parent element of the items and decreasing the opacity of the other items around while the hovered item’s opacity become clearer in CSS. I even added a parallax effect on the background image of the exhibit page the same way I did for the homepage with just vanilla CSS.
 
 <img src="https://i.imgur.com/NS9i0vF.gif">
+
+    div.navbar-start:hover > div {
+      opacity: 0.5;
+    }
+
+    div.navbar-start:hover > div:hover {
+      opacity: 1;
+    }
 
 ## Wins and Challenges
 
